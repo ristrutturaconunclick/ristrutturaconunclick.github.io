@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ristruttura con un click</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="center-content">
+                    <br>
+                    <img src="src/images/img-01.png" alt="Placeholder Image" class="img" width="40%">
+                    <br><br>
+                    <div class="rettagle text-center">
+                        <br>
+                        <p>Per vedere i nostri servizi</p>
+                        <button class="btn2" type="button"><a href="lavori.html" style="text-decoration: none; color: black;">Clicca qui</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="13846d7e-600e-41dd-9c23-9c3c32579fe3">
+                    <h1 class="text-center">Preventivo Gratuito</h1>
+                    <p>I dati di questo modulo saranno utilizzati unicamente per instaurare il necessario contatto finalizzato alla realizzazione del progetto richiesto, dopodiché verranno eliminati automaticamente.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" name="Nome" class="form-control" id="name" required placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="cognome">Cognome</label>
+                                <input type="text" name="Cognome" class="form-control" id="cognome" required placeholder="Cognome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" class="form-control" id="email" required placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="muratura">Muratura immobile</label>
+                                <select class="form-control" name="muratura" id="muratura" required>
+                                    <option value="">Seleziona Muratura</option>
+                                    <option value="60">60</option>
+                                    <option value="80">80</option>
+                                    <option value="100">100</option>
+                                    <option value="120">120</option>
+                                    <option value="150">150</option>
+                                    <option value="200+">200+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="telefono">Telefono</label>
+                                <input type="tel" name="Telefono" class="form-control" id="telefono" required placeholder="Telefono">
+                            </div>
+                            <div class="form-group">
+                                <label for="citta">Città</label>
+                                <input type="text" name="Città" class="form-control" id="citta" required placeholder="Città">
+                            </div>
+                            <div class="form-group">
+                                <label for="proprietà">Hai un immobile di proprietà?</label>
+                                <select class="form-control" id="proprietà" name="Proprietà" required>
+                                    <option value="">Seleziona</option>
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orario">Quando posso richiamarti?</label>
+                                <select class="form-control" id="orario" name="Orario" required>
+                                    <option value="">Seleziona orario</option>
+                                    <option value="10/13">10/13</option>
+                                    <option value="16/20">16/20</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-right">
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label" for="privacy">Ho letto la <a href="informativa-della-privacy.html">privacy policy</a> e accetto di essere ricontattato.</label>
+                            <input class="form-check-input" type="checkbox" id="privacyCheck" name="Acconsento di essere ricontattato" value="Si" required>
+                        </div>
+                    </div>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Invia</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        ©2023 Copyright <a href="https://successia.it/" style="text-decoration: none; color:black">Successia s.r.l.s.</a> - All Rights Reserved.
+    </footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
